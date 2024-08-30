@@ -155,5 +155,213 @@ Advantages:
 - Any Real world entity that shows attributes and behavior can be considered as an object. 
 - A class is the blueprint of an object. 
 
+Unlike java, Kotlin is null safe. That is the reason, the variables that you declare must be initialized or they can also accept null values if you specify explicitly with `?` combination. 
+
+```kotlin
+import java.util.Scanner
+
+class Dog{
+    // Dog Attributes -> name, age & weight
+    // Display()
+    var name:String? = null
+    var age:Int? = null
+    var weight:Double? = null
+
+    fun display(){
+        println("$name of age $age is of weight $weight")
+    }
+}
+
+fun main(){
+    val d = Dog() // This is how you create an Object
+    d.name = "Tommy"
+    d.age = 12
+    d.weight = 34.45
+
+    val j = Dog()
+    j.name = "Jimmy"
+    j.age = 10
+    j.weight = 4.45
+
+    d.display()
+    j.display()
+}
+```
+
+**Output**
+```
+Tommy of age 12 is of weight 34.45
+Jimmy of age 10 is of weight 4.45
+
+Process finished with exit code 0
+```
+
+```kotlin
+package com.nareshit.kotlinfundamentalsforandroid
+
+import java.util.Scanner
+
+class Dog{
+    // Dog Attributes -> name, age & weight
+    // Display()
+    var name:String? = null
+    var age:Int? = null
+    var weight:Double? = null
+
+    fun display(){
+        println("$name of age $age is of weight $weight")
+    }
+}
+
+fun main(){
+    val d = Dog() // This is how you create an Object
+    d.name = "Tommy"
+    d.age = 12
+    d.weight = 34.45
+
+    val j = d
+    j.name = "Jimmy"
+    j.age = 10
+    j.weight = 4.45
+
+    d.display()
+    j.display()
+}
+```
+
+**Output**
+```
+Jimmy of age 10 is of weight 4.45
+Jimmy of age 10 is of weight 4.45
+
+Process finished with exit code 0
+```
 
 
+#### Consturctors in Kotlin
+
+In kotlin, A constructor is a special block of code that initilizes a new object of a class. There are two types of constructors in kotlin
+
+1. Primary Constructor
+    The primary constructor is a part of the class header and is declared after the class name. It is used to initialize the class with basic parameters.
+    
+2. Secondary Constructor
+    A class can have one or more secondary constructors , which are defined inside the class body using `constructor` keyword. They can provide additional initialization logic or different ways to initialize an object. 
+
+```kotlin
+import java.util.Scanner
+
+class Dog(var name:String?, var age:Int?, var weight:Double?){
+
+    constructor(name:String):this(name,0,0.0){
+        println("Remember that you only entered the name of the dog")
+    }
+
+    constructor(name:String, age:Int):this(name,age,0.0){
+        println("Remember that you did not give weight")
+    }
+
+    fun display(){
+        println("$name of age $age is of weight $weight")
+    }
+}
+
+fun main(){
+    val d = Dog("Justin",12,5.6) // This is how you create an Object
+    d.display()
+
+    val tommy = Dog("Tommy")
+    d.display()
+}
+```
+
+**output**
+
+```
+Justin of age 12 is of weight 5.6
+Remember that you only entered the name of the dog
+Justin of age 12 is of weight 5.6
+
+Process finished with exit code 0
+```
+
+#### Inheritance in Kotlin
+This is another fundamentally very important concept in OOPs. Inheritance is the process of acquring the properties & behaviors of one class into another class. 
+
+**Inheritance is primarily used for Re-usability of the code**
+
+**Important Point to Note:**
+- All Classes in Kotlin have a common super class, `Any`, which is the default super class for a class with no super class defined. 
+
+```koltin
+class Chiranjeevi{
+    // The default super class will be ANY
+}
+```
+
+`Any` class has got three methods
+- equals()
+- hashCode()
+- toString()
+
+Hence, These methods are present by default in any class you create 
+
+```kotlin
+import java.util.Scanner
+
+class Dog(var name:String?, var age:Int?, var weight:Double?){
+
+    fun display(){
+        println("$name of age $age is of weight $weight")
+    }
+}
+
+fun main(){
+    val d = Dog("Justin",12,5.6) // This is how you create an Object
+    d.display()
+
+    val j = d
+    println(d.equals(Dog("Justin",12,5.6)))
+    println(d.equals(j))
+
+    println(d.toString())
+
+    println(j.hashCode())
+    println(d.hashCode())
+}
+```
+
+***Output***
+```
+Justin of age 12 is of weight 5.6
+false
+true
+com.nareshit.kotlinfundamentalsforandroid.Dog@7a0ac6e3
+2047526627
+2047526627
+
+Process finished with exit code 0
+```
+
+**Important Point to Note:**
+
+In Kotlin, all classes are `final` by default.If you want to subclass a class use `open` keyword to make the class subclassable. 
+
+```kotlin
+class Pavan{
+    // This class is final and we cannot create subclasses to this class
+}
+```
+
+```kotlin
+open class Pavan{
+    // Now this class is subclassable
+}
+```
+
+In Java, we use `extends` keyword to create a subclass. In Kotlin, we use `:` for the same. 
+
+```kotlin
+open class Base(p:Int)
+class Derived(p:Int):Base(p)
+```

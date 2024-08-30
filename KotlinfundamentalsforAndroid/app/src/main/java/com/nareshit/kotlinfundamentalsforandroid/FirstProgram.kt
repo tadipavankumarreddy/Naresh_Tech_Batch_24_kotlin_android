@@ -2,13 +2,23 @@ package com.nareshit.kotlinfundamentalsforandroid
 
 import java.util.Scanner
 
-fun main() {
-    println("Enter the size of the array")
-    val s = Scanner(System.`in`)
-    val l = s.nextInt()
+class Dog(var name:String?, var age:Int?, var weight:Double?){
 
-    var a = Array<Int>(l,{i->i+1})
-    for (i in a){
-        print("$i ")
+    fun display(){
+        println("$name of age $age is of weight $weight")
     }
+}
+
+fun main(){
+    val d = Dog("Justin",12,5.6) // This is how you create an Object
+    d.display()
+
+    val j = d
+    println(d.equals(Dog("Justin",12,5.6)))
+    println(d.equals(j))
+
+    println(d.toString())
+
+    println(j.hashCode())
+    println(d.hashCode())
 }
