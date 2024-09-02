@@ -365,3 +365,250 @@ In Java, we use `extends` keyword to create a subclass. In Kotlin, we use `:` fo
 open class Base(p:Int)
 class Derived(p:Int):Base(p)
 ```
+
+
+```kotlin
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+open class A(var name:String?, var age:Int?){
+    fun display(){
+        print("$name $age")
+    }
+    
+}
+
+class B(var n:String?, var a:Int?, var salary:Int?):A(n,a){
+    fun display2(){
+        display()
+        print(" $salary")
+    }
+}
+
+fun main() {
+    val b = B("Pavan", 18, 10000)
+    b.display2()
+}
+```
+***Output***
+```
+Pavan 18 10000
+```
+### Encapsulation
+
+Another fundamental Oops concept. Encapsulation refers to the bundling of data and methods that operate on the data with in a single Unit, is called as class. 
+
+Encapsulation is a way to hide the implementation details of a class from outside access and only exposing public interface that can be used to interact with the class. 
+
+**Modifiers in Kotlin**
+
+- `private` - the element that is declared private cannot be accessed from outside the kotlin file that is defined in. These elements can only be accessed in the same place where they are defined. 
+- `public` - Elements are accessed from anywhere
+- `protected` - Same as private except that subclasses can access the class/interface elements.
+- `internal` - Anything in the module (folder) can be accessed. 
+
+
+```kotlin
+class Internals{
+    internal var a = 10
+}
+
+fun main(){
+    val i = Internals()
+    println(i.a)
+}
+```
+
+```kotlin
+class BankAccount(private var balance:Double){
+    fun deposit(amount:Double){
+        if(amount>0){
+            balance += amount
+            println("Deposited $amount in your account")
+            println("The new balance is $balance")
+        }else{
+            println("The amount should be positive for deposit")
+        }
+    }
+    
+    fun withdraw(amount:Double){
+        if(amount>0 && amount<=balance){
+            balance -= amount
+            println("Successful withdraw: balance is $balance")
+        }else{
+            println("Insufficient Funds")
+        }
+    }
+    
+    fun getBalance():Double{
+        return balance
+    }
+}
+```
+
+By using encapsulation, the internal state of the `BankAccount` class is protected from direct access and modifications from outside the class. Only the methods provided by the class can modify the balance, ensuring that the class maintains control over how the balance is accessed and changed. This help maintain integrity of the data and prevents unintended side effects.
+
+If a class with a certain functionality is defined in a different package and the elements in the class are accessible either direclty (if they are declared as public) or with the help of their helper methods (incase of private or protected modifiers), you can write the import statements to import that module or a specific class. 
+
+If a class in the smae module (Package) needs to be accessed, you can directly access it. No need of Import statements. 
+
+### Polymorphism
+
+Existence in multiple forms is called polymorphism
+- Overloading (compile time polymorphism)
+- Overriding (runtime Polymorphism)
+
+**Overloading**
+
+```kotlin
+fun sum(a:Int, b:Int):Int{
+	return a+b
+}
+
+fun sum(a:Int, b:Int, c:Int):Int{
+    return a+b+c
+}
+
+fun sum(a:Int, b:Double):Double{
+    return a+b
+}
+fun main() {
+ 	println(sum(10,20))
+    println(sum(10,20,30))
+    println(sum(10,30.45))
+}
+```
+
+***Overriding***
+
+The function has to be `open` for overrding to happen.
+
+```kotlin
+open class First{
+    open fun sum(a:Int,b:Int) = a+b
+    fun sum(a:Int, b:Int, c:Int) = a+b+c
+}
+
+class Second:First(){
+    override fun sum(a:Int, b:Int) = a*b
+}
+               
+fun main() {
+    var s = Second()
+    println(s.sum(10,20))
+    println(s.sum(10,20,30))
+}
+```
+
+### Abstract Classes in Kotlin
+
+Abstract classes are those classes defined with `abstract` keyword. In an abstract class you can have methods with body and methods without a body. 
+
+- Abstract classes cannot be instantiated on its own and mustt be subclassed. 
+- It can have Abstract methods (unimplemented)
+- It can have concrete methods (defined)
+
+```Kotlin
+abstract class RBI{
+    /***This function is not open to override - so all the banks that 
+     * are undertaken by RBI should be implementing the same
+     * interst rate***/
+    fun homeLoanInterestRate():Double{
+        return 7.65
+    }
+    
+    abstract fun personalLoan():Double
+}
+
+class SBI:RBI(){
+    override fun personalLoan():Double{
+        return 6.2
+    }
+}
+
+class ICICI:RBI(){
+    override fun personalLoan():Double{
+        return 7.8
+    }
+}
+
+fun main(){
+    val s:SBI = SBI()
+    println(s.homeLoanInterestRate())
+    println(s.personalLoan())
+}
+```
+
+### Interfaces in Kotlin
+
+Interfaces are similar to interfaces in java, but with some additonal features and more concise syntax.
+
+**Declare an Interface**
+
+```kotlin
+interface MyInterface{
+    fun myMethod()
+    val myProperty:String
+}
+```
+**Implementing an Inteface**
+
+Classes in kotlin can implement one or other interfaces using `:` symbol.
+
+```koltin
+interface MyInterface{
+    fun myMethod()
+    val myProperty:String
+}
+
+class MyClass:MyInterface{
+    override val myProperty:String = "Hello"
+    override fun myMethod(){
+        println("My Method Implementation")
+    }
+}
+fun main() {
+    val m = MyClass()
+    m.myMethod()
+}
+```
+
+#### Default Implementation
+Kotlin interfaces can provide default implementation for Methods. 
+
+```kotlin
+interface MyInterface{
+    fun myMethod(){
+        println("This is default implementation")
+    }
+}
+```
+
+With interfaces, we can implement Multiple Inheritance
+
+```kotlin
+interface Animal{
+    val name:String
+    fun sound():String
+    
+    //default Implementation
+    fun printDetails(){
+        println("Animal: $name, sound: ${sound()}")
+    }
+}
+
+class Dog(override val name:String):Animal{
+    override fun sound():String = "Bark"
+}
+
+class Cat(override val name:String):Animal{
+    override fun sound():String = "Meow"
+}	
+fun main() {
+	val dog = Dog("Buddy")
+    dog.printDetails()
+}
+```
+
+***End***
