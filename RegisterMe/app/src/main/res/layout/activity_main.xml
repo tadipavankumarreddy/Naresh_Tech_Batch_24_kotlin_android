@@ -167,7 +167,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/hindi" />
 
-            <Switch
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/available"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -176,6 +176,18 @@
                 app:layout_constraintEnd_toEndOf="@+id/nationality"
                 app:layout_constraintStart_toStartOf="@+id/nationality"
                 app:layout_constraintTop_toBottomOf="@+id/nationality" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/available"
+                tools:text="This text is only visible during development" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

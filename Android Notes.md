@@ -10,3 +10,16 @@ Read About Constraint Layout [here](https://developer.android.com/develop/ui/vie
 ### Assignment
 - Design a score tracker app interface using constraint layout
 
+[Button](https://developer.android.com/develop/ui/views/components/button#java)
+
+### Assignment:
+> Please complete the TODO 8 & TODO 9 from the [Register Me](/RegisterMe/)
+
+**Important Announcement:**
+We don't have sessions tomorrow and the day after tomorrow on account of Vinayaka chaturdhi. Please close all the pending assignments by Monday. 
+
+***Happy Ganesh Chaturdhi***
+
+---
+
+
