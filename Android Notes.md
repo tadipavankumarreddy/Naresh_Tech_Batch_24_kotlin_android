@@ -50,3 +50,9 @@ Create **An Age Calculator** app.
  
 **Task:** The first activity should have fields for the user to enter their name and birth year. When the user clicks on a button, the app should navigate to the SecondActivity, which displays a message like, "Hello, [Name]! You are [Age] years Old!."
 
+[Common Intents](https://developer.android.com/guide/components/intents-common)
+
+#### Assignment
+
+Please complete any two common intents other than maps, browser, dailer and settings. 
+
