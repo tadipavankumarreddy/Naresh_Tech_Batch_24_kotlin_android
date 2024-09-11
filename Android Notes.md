@@ -56,3 +56,55 @@ Create **An Age Calculator** app.
 
 Please complete any two common intents other than maps, browser, dailer and settings. 
 
+#### Activity LifeCycle
+Lifecycle means from the time of creation till the time of destruction, whatever, the states that a component undergoes. 
+
+Activity Lifecycle means all the stages that an activity goes through from the time of creation till the time of destruction of an activity.
+
+[Official Documentation](https://developer.android.com/guide/components/activities/activity-lifecycle)
+
+![image](/activity_lifecycle.png)
+
+- Your activity is in running state as soon as it goes through `onResume()` method. 
+- When the user taps on home button, the activity goes to background by going through `onPause()` & `onStop()` methods. 
+- When the user brings an app back from backstack, the activity that is on foreground on that app, will be restarted by going though `onRestart()`, `onStart()` & `onResume()` -> Activity your activity is in running state. 
+- If the user clicks on the backbutton, the activity is removed from the memory (Activity is destroyed) by going through `onPause()`, `onStop()` & `onDestroy()`.
+
+**About Logcat**
+The Log class is used for logging the messages to the Logcat, which is a command-line tool that displays System Messages, including stack traces when the app throws an error. The Log class provides several methods to send messages of different priority levels to the logcat. 
+
+1. Log.v (Verbose):
+   -  Priority Level : Lowest
+   -  Used to log the most detailed information. It's meant for development purposed and provides more granular details about the code execution, such as the flow and state of the app.
+   -  Log.v("TAG", "Your Message")
+  
+2. Log.d (Debug)
+   -  Priority Level: Debug
+   -  Used to log debugging messages. Its useful for development and debugging to track the flow and the staet of an app.
+   -  Log.d("TAG", "Your Message")
+  
+3. Log.i (Information)
+   -  Priority: Informational
+   -  Used to log informational messages that highlight the progress of that applicaiton at a coarse-grained level. 
+   -  These logs are usually enabled in production also. 
+   -  Log.i("TAG","Message")
+
+4. Log.w (Warn):
+   -  Used to log potentially harmful situations. 
+
+5. Log.e(Error)
+   - Priority :Highest
+   -  Used to log error messages that indicate the application has encountered a serious issue. 
+
+**Acitivty Backstack (TASK)**  
+[official doc link](https://developer.android.com/guide/components/activities/tasks-and-back-stack)
+
+![image](/task.png)
+
+### Assignment
+Explain the four launcher modes in detail.Draw pictures to demonstrate how they are useful. 
+
+
+
+
+
