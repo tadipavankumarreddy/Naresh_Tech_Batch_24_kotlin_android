@@ -105,6 +105,18 @@ The Log class is used for logging the messages to the Logcat, which is a command
 Explain the four launcher modes in detail.Draw pictures to demonstrate how they are useful. 
 
 
+## ListView
+- This ui component is used to display list of items to the user
+- This is a legacy approach
+- Recyclerview is a replacement of Listview and is quite powerful than listview. 
+- Listview only supports vertical collection of views. 
+- No Support for Horizontal Scrolling. 
+
+[Official Documentation](https://developer.android.com/reference/android/widget/ListView)
+
+- Whenever there is a list of items (multiple Pieces of Data) to be displayed on a single view such as ListView, Spinner, RecyclerView and etc., We need to use an Adapter.
+- For ListView and Spinner, we use ArrayAdapter.
+
 
 
 
