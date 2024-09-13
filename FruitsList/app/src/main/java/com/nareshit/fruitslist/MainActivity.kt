@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 
     class FruitsAdapter(val context:Context,val fLists:List<String>, val iLists:List<Int>):BaseAdapter() {
         override fun getCount(): Int {
-            return 7
+            return fLists.size
         }
 
         override fun getItem(position: Int): Any {

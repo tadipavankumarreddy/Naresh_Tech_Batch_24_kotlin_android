@@ -117,6 +117,15 @@ Explain the four launcher modes in detail.Draw pictures to demonstrate how they 
 - Whenever there is a list of items (multiple Pieces of Data) to be displayed on a single view such as ListView, Spinner, RecyclerView and etc., We need to use an Adapter.
 - For ListView and Spinner, we use ArrayAdapter.
 
+### RecyclerView
+
+[presentation](https://docs.google.com/presentation/d/1nFJqH0OSSZmjaycRzEGE6vvsm6jlxghQyoO15KKbkwc/edit?usp=sharing)
+
+[Official Documentation Link](https://developer.android.com/develop/ui/views/layout/recyclerview)
+
+[Excellent Codelab](https://developer.android.com/courses/pathways/android-development-with-kotlin-10)
+
+
 
 
 
