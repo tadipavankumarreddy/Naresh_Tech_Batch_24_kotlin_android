@@ -125,7 +125,29 @@ Explain the four launcher modes in detail.Draw pictures to demonstrate how they 
 
 [Excellent Codelab](https://developer.android.com/courses/pathways/android-development-with-kotlin-10)
 
+Custom chrom tabs [Official Documentation](https://developer.chrome.com/docs/android/custom-tabs/guide-get-started)
 
+### **Synchronous Vs Asynchornous programming**
 
+These are two different ways of handling operations, especially those involve in waiting like I/O (reading, files, network requests,. etc)
 
+**Synchronous Programming**
+Here tasks are performed one after the other. The program waits for a task to complete before moving on to the next one. 
+
+Major disadvantage is blocks.
+
+**Asynchronous Programming**
+
+Helps you perfrom tasks concurrently. The program does not wait for a task to complete; instead it goes on to the next task and comes back to the task when it's needed. 
+
+***Two Important Points to note***
+- Never block your UI Thread (Main Thread). 
+- Do not access the android UI toolkit from any thread other than main thread. 
+
+Async Task [Slides](https://docs.google.com/presentation/d/1A7anDTS8NQCunbxoJnqJqkSHNFCvRIn9moE7Zww-gds/edit#slide=id.g116d7d9d49_3_13)
+
+Async Task [Official Doc](https://developer.android.com/reference/android/os/AsyncTask)
+
+### Important Announcement
+Starting from tomorrow ie., 18th of Sep 2024, Our sessions begin at 7:30 AM. 
 

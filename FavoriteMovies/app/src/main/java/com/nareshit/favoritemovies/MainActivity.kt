@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 
 class MainActivity : AppCompatActivity() {
 
-    data class Movies(val images:Int,val title:String,val actors:MutableList<String>)
+    data class Movies(val images:Int,val title:String,val actors:MutableList<String>, val url:String)
 
     lateinit var recyclerview:RecyclerView
 
@@ -37,22 +37,22 @@ class MainActivity : AppCompatActivity() {
         // TOOD 5: Set up the Layout Manager
         /*recyclerview.layoutManager = LinearLayoutManager(this)*/
         /*recyclerview.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)*/
-        /*recyclerview.layoutManager = GridLayoutManager(this,2)*/
-        recyclerview.layoutManager = StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
+        recyclerview.layoutManager = GridLayoutManager(this,2)
+        /*recyclerview.layoutManager = StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)*/
     }
 
     private fun prepareData():MutableList<Movies> {
         val movieItems = mutableListOf<Movies>()
-        movieItems.add(Movies(R.drawable.a,"A Aa", mutableListOf<String>("Nithin","Samantha")))
-        movieItems.add(Movies(R.drawable.b,"Bahubali", mutableListOf<String>("Prabhas","Anushka","Tamannah")))
-        movieItems.add(Movies(R.drawable.c,"Cindrella", mutableListOf<String>("Lilly James")))
-        movieItems.add(Movies(R.drawable.d,"Dangal", mutableListOf<String>("Aamir Khan")))
-        movieItems.add(Movies(R.drawable.e,"Eega", mutableListOf<String>("Nani","Samantha")))
-        movieItems.add(Movies(R.drawable.f,"F2", mutableListOf<String>("Venkatesh","Varun Tej")))
-        movieItems.add(Movies(R.drawable.g,"Godavari", mutableListOf<String>("Sumanth","Kamilni")))
-        movieItems.add(Movies(R.drawable.h,"Housefull", mutableListOf<String>("Akshay Kumar","Deepika")))
-        movieItems.add(Movies(R.drawable.i,"Iron Man", mutableListOf<String>("Robert Downy jr")))
-        movieItems.add(Movies(R.drawable.j,"The Jungle Book", mutableListOf<String>("Neel Sethi")))
+        movieItems.add(Movies(R.drawable.a,"A Aa", mutableListOf<String>("Nithin","Samantha"), "https://en.wikipedia.org/wiki/A_Aa"))
+        movieItems.add(Movies(R.drawable.b,"Bahubali", mutableListOf<String>("Prabhas","Anushka","Tamannah"), "https://en.wikipedia.org/wiki/Baahubali:_The_Beginning"))
+            movieItems.add(Movies(R.drawable.c,"Cindrella", mutableListOf<String>("Lilly James"),"https://en.wikipedia.org/wiki/Cinderella_(2015_American_film)"))
+        movieItems.add(Movies(R.drawable.d,"Dangal", mutableListOf<String>("Aamir Khan"), "https://en.wikipedia.org/wiki/Dangal_(2016_film)"))
+        movieItems.add(Movies(R.drawable.e,"Eega", mutableListOf<String>("Nani","Samantha"), "https://en.wikipedia.org/wiki/Eega"))
+        movieItems.add(Movies(R.drawable.f,"F2", mutableListOf<String>("Venkatesh","Varun Tej"), "https://en.wikipedia.org/wiki/F2:_Fun_and_Frustration"))
+        movieItems.add(Movies(R.drawable.g,"Godavari", mutableListOf<String>("Sumanth","Kamilni"),"https://en.wikipedia.org/wiki/Godavari_(2006_film)"))
+        movieItems.add(Movies(R.drawable.h,"Housefull", mutableListOf<String>("Akshay Kumar","Deepika"),"https://en.wikipedia.org/wiki/Housefull_(2010_film)"))
+        movieItems.add(Movies(R.drawable.i,"Iron Man", mutableListOf<String>("Robert Downy jr"),"https://en.wikipedia.org/wiki/Iron_Man_(2008_film)"))
+        movieItems.add(Movies(R.drawable.j,"The Jungle Book", mutableListOf<String>("Neel Sethi"), "https://en.wikipedia.org/wiki/The_Jungle_Book_(2016_film)"))
         return movieItems
     }
 }

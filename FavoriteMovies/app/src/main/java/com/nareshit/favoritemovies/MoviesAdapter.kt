@@ -1,13 +1,20 @@
 package com.nareshit.favoritemovies
 
 import android.content.Context
+import android.content.Intent
+import android.graphics.Color
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.OnClickListener
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.browser.customtabs.CustomTabColorSchemeParams
+import androidx.browser.customtabs.CustomTabsIntent
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.google.android.material.snackbar.Snackbar
 
 /**
  * Recyclerview adapter is complex.
@@ -46,6 +53,15 @@ class MoviesAdapter(val context:Context, val movieItems:MutableList<MainActivity
         holder.movieActors.text = ""
         for(i in movieItems.get(position).actors){
             holder.movieActors.append("$i ")
+        }
+        // TODO 5: handling the clicks on the recyclerview
+        holder.itemView.setOnClickListener { v->
+            val url: String = movieItems.get(position).url
+            val intent = CustomTabsIntent.Builder()
+                .setUrlBarHidingEnabled(true)
+                .setShowTitle(true)
+                .build()
+            intent.launchUrl(context,Uri.parse(url))
         }
     }
 }

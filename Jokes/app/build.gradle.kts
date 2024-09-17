@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.nareshit.favoritemovies"
+    namespace = "com.nareshit.jokes"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.nareshit.favoritemovies"
+        applicationId = "com.nareshit.jokes"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-    implementation("androidx.browser:browser:1.8.0")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
