@@ -151,3 +151,7 @@ Async Task [Official Doc](https://developer.android.com/reference/android/os/Asy
 ### Important Announcement
 Starting from tomorrow ie., 18th of Sep 2024, Our sessions begin at 7:30 AM. 
 
+**JSON Parsing Notes**
+- What ever is present in between `{}` is called JSON Object
+- What ever is present in between `[]` is called JSON Array
+- Strings, integers and etc., will come in name and value pairs. You need to have the key (name) to extract the value. 
