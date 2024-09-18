@@ -155,3 +155,52 @@ Starting from tomorrow ie., 18th of Sep 2024, Our sessions begin at 7:30 AM.
 - What ever is present in between `{}` is called JSON Object
 - What ever is present in between `[]` is called JSON Array
 - Strings, integers and etc., will come in name and value pairs. You need to have the key (name) to extract the value. 
+
+
+***Executors***
+[Official Document](https://developer.android.com/reference/java/util/concurrent/Executor)
+
+1. What is an Executor ?
+   -  Executors provide a way to execute tasks (Runnables or Callable) in the background, using a pool of worker threads.
+   -  Its a part of `java.util.concurrent` Package
+2. Executor Inteface
+   -  Has a simple interface that provides a method to execute
+   - 
+   ```java
+   public interface Executor{
+      void execute(Runnable command);
+   }
+   ```
+3. Types of Executors
+   -  Single Thread Executor
+      -  It creates a single worker thread to execute tasks sequentially.
+      -  use `newSingleThreadExecutor()`
+   -  Fixed Thread Pool Executor
+      -  A thread pool with a fixed number of worker threads. When all threads are busy, tasks wait in queue. 
+      -  use `newFixedThreadPool(3)`
+   -  Cached Thread Pool
+      -  A thread pool that creates new threads as needed, but reuses the existing ones when available. It's suitable for handling short-lived tasks. 
+      -  use `newCachedThreadPool()`
+   -  Scheduled Thread Pool
+      -  You can have a schedule to run your tasks
+      -  use `newScheduledThreadPool(3)`
+4. ExecutorService
+   -  ExecutorService is more advanced version of Executor. It can manage the lifecycle of threads and provides additional features
+      -  submitting tasks that return results
+      -  Scheduling the tasks
+      -  Managing the thread shutdown.
+5. Submitting Tasks
+   -  Runnables
+      -  tasks (no result)
+   -  Callables
+      -  tasks (with a result)
+6. Shutdown the executor
+   -  Always shutdown the executor to free up the resources
+      -  `shutdown()` method can be used. 
+7. Handle exceptions
+   -  Uncaught execeptions in threads can be handled using `Thread.UncaughtExeceptionHandler`. In the executors, you might need to handle exceptions inside the Runnable or Callable. 
+8. Advanced Features
+   -  **InvokeAll**: Executes a collection of Callable Tasks and retuns a list of Future Objects.
+   -  **InvokeAny**: Executes a collection of Callable Tasks, returning the result of the first successful task. 
+
+  
