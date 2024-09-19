@@ -1,0 +1,913 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 1545,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "pyJAEAAAQBAJ",
+        "etag": "UOwWOMeqUus",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/pyJAEAAAQBAJ",
+        "volumeInfo": {
+          "title": "The Everyday Hero Manifesto",
+          "authors": [
+            "Robin Sharma"
+          ],
+          "publisher": "Jaico Publishing House",
+          "publishedDate": "2021-09-15",
+          "description": "For over twenty-five years, leadership legend and personal-mastery path-blazer Robin Sharma has mentored billionaires, business titans, professional-sports superstars and entertainment royalty via a revolutionary methodology that led them to accomplish rare-air results. Now, in this groundbreaking book, Sharma makes his transformational system available to anyone who is ready for undefeatable positivity, monumental productivity, deep spiritual freedom and a life of helping others. In The Everyday Hero Manifesto you will discover: · The hidden habits used by many of the world’s most creative and successful people to realize their visionary ambitions · Original techniques to turn fear into fuel, problems into power and past troubles into triumphs · A breakthrough blueprint to battle-proof yourself against distraction and procrastination so that you produce magic that dominates your domain · Pioneering insights on adopting world-class routines that will lead you to achieve superhuman fitness and become the most disciplined person you know · Unusual wisdom to operate with far more simplicity, beauty and peace Part memoir of a life richly lived, part instruction manual for virtuoso-grade performance, and part handbook for spiritual freedom in an age of high-velocity change, The Everyday Hero Manifesto will completely transform your life. Forever. ROBIN SHARMA is a humanitarian who has devoted his life to helping people express their highest natural gifts. He is widely regarded as one of the top leadership and personal-mastery experts in the world. His clients include NASA, Microsoft, NIKE, Unilever, GE, FedEx, HP, Starbucks, Oracle, Yale University, PwC, IBM Watson and the Young Presidents’ Organization. His #1 international bestsellers, such as The 5 AM Club, The Monk Who Sold His Ferrari, The Greatness Guide and Who Will Cry When You Die?, have sold millions of copies in over ninety-two languages, making him one of the most widely read authors on the planet.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9789391019754"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "9391019757"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 400,
+          "printType": "BOOK",
+          "categories": [
+            "Self-Help"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.1.1.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=pyJAEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=pyJAEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.co.in/books?id=pyJAEAAAQBAJ&pg=PP1&dq=robin+sharma&hl=&cd=1&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=pyJAEAAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=pyJAEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "IN",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 470.82,
+            "currencyCode": "INR"
+          },
+          "retailPrice": {
+            "amount": 329.57,
+            "currencyCode": "INR"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=pyJAEAAAQBAJ&rdid=book-pyJAEAAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 470820000,
+                "currencyCode": "INR"
+              },
+              "retailPrice": {
+                "amountInMicros": 329570000,
+                "currencyCode": "INR"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "IN",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/The_Everyday_Hero_Manifesto-sample-epub.acsm?id=pyJAEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/The_Everyday_Hero_Manifesto-sample-pdf.acsm?id=pyJAEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=pyJAEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Now, in this groundbreaking book, Sharma makes his transformational system available to anyone who is ready for undefeatable positivity, monumental productivity, deep spiritual freedom and a life of helping others."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "-GWBDwAAQBAJ",
+        "etag": "5i+V94dp0Js",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/-GWBDwAAQBAJ",
+        "volumeInfo": {
+          "title": "The 5 AM Club",
+          "authors": [
+            "Robin Sharma"
+          ],
+          "publisher": "Jaico Publishing House",
+          "description": "OWN YOUR MORNING, ELEVATE YOUR LIFE Legendary leadership and elite performance expert Robin Sharma introduced The 5 AM Club concept over twenty years ago, based on a revolutionary morning routine that has helped his clients maximize their productivity, activate their best health and bulletproof their serenity in this age of overwhelming complexity. Now, in this life-changing book, handcrafted by the author over a rigorous four year period, you will discover the early-rising habit that has helped so many accomplish epic results while upgrading their happiness, helpfulness and feelings of aliveness. Through an enchanting—and often amusing—story about two struggling strangers who meet an eccentric tycoon who becomes their secret mentor, The 5 AM Club will walk you through: ■ How great geniuses, business titans and the world’s wisest people start their mornings to produce astonishing achievements ■ A little-known formula you can use instantly to wake up early feeling inspired, focused and flooded with a fiery drive to get the most out of each day ■ A step-by-step method to protect the quietest hours of daybreak so you have time for exercise, self-renewal and personal growth ■ A neuroscience-based practice proven to help make it easy to rise while most people are sleeping, giving you precious time for yourself to think, express your creativity and begin the day peacefully instead of being rushed ■ “Insider-only” tactics to defend your gifts, talents and dreams against digital distraction and trivial diversions so you enjoy fortune, influence and a magnificent impact on the world ROBIN SHARMA is a globally respected humanitarian. Widely considered one of the world’s top leadership and personal optimization advisors, his clients include famed billionaires, professional sports superstars and many Fortune 100 companies. The author’s #1 bestsellers, such as The Monk Who Sold His Ferrari, The Greatness Guide and The Leader Who Had No Title are in over 92 languages, making him one of the most broadly read writers alive today. A portion of the proceeds of this book will go to The Robin Sharma Foundation for Children to help kids in need live better lives. “Robin Sharma’s books are helping people all over the world lead great lives.” —PAULO COELHO",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9789387944893"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "9387944891"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 336,
+          "printType": "BOOK",
+          "categories": [
+            "Self-Help"
+          ],
+          "averageRating": 5,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.1.1.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=-GWBDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=-GWBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.co.in/books?id=-GWBDwAAQBAJ&printsec=frontcover&dq=robin+sharma&hl=&cd=2&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=-GWBDwAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=-GWBDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "IN",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 413,
+            "currencyCode": "INR"
+          },
+          "retailPrice": {
+            "amount": 289.1,
+            "currencyCode": "INR"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=-GWBDwAAQBAJ&rdid=book--GWBDwAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 413000000,
+                "currencyCode": "INR"
+              },
+              "retailPrice": {
+                "amountInMicros": 289100000,
+                "currencyCode": "INR"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "IN",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/The_5_AM_Club-sample-epub.acsm?id=-GWBDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/The_5_AM_Club-sample-pdf.acsm?id=-GWBDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=-GWBDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "A portion of the proceeds of this book will go to The Robin Sharma Foundation for Children to help kids in need live better lives. “Robin Sharma’s books are helping people all over the world lead great lives.” —PAULO COELHO"
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "zIWqDwAAQBAJ",
+        "etag": "Utn2vNEFckI",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/zIWqDwAAQBAJ",
+        "volumeInfo": {
+          "title": "Robin Sharma Pack (8 Volume Set)",
+          "authors": [
+            "Robin Sharma"
+          ],
+          "publisher": "Jaico Publishing House",
+          "publishedDate": "2019-08-26",
+          "description": "THE ROBIN SHARMA LIBRARY FOR LEGENDS [AND EVERYDAY HEROES] Includes 8 international bestsellers New Collector’s Edition has all of Robin Sharma’s bestselling titles in one pack. Includes FREE The Monk Who Sold His Ferrari audiobook read by the author. Volume 1 - The 5 am Club Volume 2 - The Monk Who Sold His Ferrari (With free audiobook) Volume 3 - Discover Your Destiny Volume 4 - Family Wisdom Volume 5 - Who Will Cry When You Die? Volume 6 - The Greatness Guide Volume 7 - The Mastery Manual Volume 8 - The Leader Who Had No Title ROBIN SHARMA is a globally respected humanitarian. Widely considered one of the world’s top leadership and personal optimization advisors, his clients include famed billionaires, professional sports superstars and many Fortune 100 companies. The author’s #1 bestsellers, such as The Monk Who Sold His Ferrari, The Greatness Guide and The Leader Who Had No Title are in over 92 languages, making him one of the most broadly read writers alive today. Go to robinsharma.com for more inspiration + valuable resources to upgrade your life “Robin Sharma’s Following Rivals that of the Dalai Lama.” The Times of India “Global Humanitarian.” CNN “Leadership Legend.” Forbes",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9789388423540"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "9388423542"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 1892,
+          "printType": "BOOK",
+          "categories": [
+            "Self-Help"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.1.1.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=zIWqDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=zIWqDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.co.in/books?id=zIWqDwAAQBAJ&printsec=frontcover&dq=robin+sharma&hl=&cd=3&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=zIWqDwAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=zIWqDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "IN",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 2358.82,
+            "currencyCode": "INR"
+          },
+          "retailPrice": {
+            "amount": 2358.82,
+            "currencyCode": "INR"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=zIWqDwAAQBAJ&rdid=book-zIWqDwAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 2358820000,
+                "currencyCode": "INR"
+              },
+              "retailPrice": {
+                "amountInMicros": 2358820000,
+                "currencyCode": "INR"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "IN",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/Robin_Sharma_Pack_8_Volume_Set-sample-epub.acsm?id=zIWqDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/Robin_Sharma_Pack_8_Volume_Set-sample-pdf.acsm?id=zIWqDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=zIWqDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Volume 6 - The Greatness Guide Volume 7 - The Mastery Manual Volume 8 - The Leader Who Had No Title ROBIN SHARMA is a globally respected humanitarian."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "mjasWuJANoYC",
+        "etag": "hRJ8uiBWfdQ",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/mjasWuJANoYC",
+        "volumeInfo": {
+          "title": "The Leader Who Had No Title",
+          "subtitle": "A Modern Fable on Real Success in Business and in Life",
+          "authors": [
+            "Robin Sharma"
+          ],
+          "publisher": "Simon and Schuster",
+          "publishedDate": "2010-03-23",
+          "description": "From the author of \"The Monk Who Sold His Ferrari\" comes an inspiring parableabout the skills needed to excel in career and life.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781439109120"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1439109125"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 226,
+          "printType": "BOOK",
+          "categories": [
+            "Business & Economics"
+          ],
+          "averageRating": 4.5,
+          "ratingsCount": 6,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "0.7.6.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=mjasWuJANoYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=mjasWuJANoYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.co.in/books?id=mjasWuJANoYC&printsec=frontcover&dq=robin+sharma&hl=&cd=4&source=gbs_api",
+          "infoLink": "http://books.google.co.in/books?id=mjasWuJANoYC&dq=robin+sharma&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Leader_Who_Had_No_Title.html?hl=&id=mjasWuJANoYC"
+        },
+        "saleInfo": {
+          "country": "IN",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IN",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/The_Leader_Who_Had_No_Title-sample-epub.acsm?id=mjasWuJANoYC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=mjasWuJANoYC&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "From the author of &quot;The Monk Who Sold His Ferrari&quot; comes an inspiring parableabout the skills needed to excel in career and life."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "RWG13F93aKsC",
+        "etag": "LnOCcRt5WqE",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/RWG13F93aKsC",
+        "volumeInfo": {
+          "title": "The Monk Who Sold His Ferrari",
+          "subtitle": "A Remarkable Story About Living Your Dreams",
+          "authors": [
+            "Robin Sharma"
+          ],
+          "publisher": "HarperCollins Canada",
+          "publishedDate": "2011-02-01",
+          "description": "With more than four million copies sold in fifty-one languages, The Monk Who Sold His Ferrari launched a bestselling series and continues to help people from every walk of life live with far greater success, happiness and meaning in these times of dramatic uncertainty. The Monk Who Sold His Ferrari celebrates the story of Julian Mantle, a successful but misguided lawyer whose physical and emotional collapse propels him to confront his life. The result is an engaging odyssey on how to release your potential and live with passion, purpose and peace. A brilliant blend of timeless wisdom and cutting-edge success principles, The Monk Who Sold His Ferrari is now, more than ever, a guide for the times, as countless Canadians dedicate themselves to living a life where family, work and personal fulfillment are achieved in harmonious balance.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781554685943"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "155468594X"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 186,
+          "printType": "BOOK",
+          "categories": [
+            "Self-Help"
+          ],
+          "averageRating": 3.5,
+          "ratingsCount": 6,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "2.4.2.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=RWG13F93aKsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=RWG13F93aKsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.co.in/books?id=RWG13F93aKsC&pg=PA1&dq=robin+sharma&hl=&cd=5&source=gbs_api",
+          "infoLink": "http://books.google.co.in/books?id=RWG13F93aKsC&dq=robin+sharma&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Monk_Who_Sold_His_Ferrari.html?hl=&id=RWG13F93aKsC"
+        },
+        "saleInfo": {
+          "country": "IN",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IN",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/The_Monk_Who_Sold_His_Ferrari-sample-epub.acsm?id=RWG13F93aKsC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=RWG13F93aKsC&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The Monk Who Sold His Ferrari celebrates the story of Julian Mantle, a successful but misguided lawyer whose physical and emotional collapse propels him to confront his life."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "5n_vDwAAQBAJ",
+        "etag": "1fGtUXiSzG4",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/5n_vDwAAQBAJ",
+        "volumeInfo": {
+          "title": "Little Black Book for Stunning Success (Tamil)",
+          "authors": [
+            "Robin Sharma"
+          ],
+          "publisher": "Jaico Publishing House",
+          "publishedDate": "2020-09-21",
+          "description": "A MANIFESTO FOR EVERYDAY GREATNESS In The Little Black Book for Stunning Success, Robin Sharma – one of the true masters of leadership + elite performance on the planet – shares the potent insights that have helped so many people just like you do legendary work, live remarkable lives and lift everyone around them in the process. If you’re truly ready to live your dreams, this book is your fuel. As you read this playbook of the pros, you will discover: ■ The hidden beliefs of the best in the world ■ The rituals of business titans and history’s icons ■ How superstars create their performances ■ Daily tactics to become a happier, healthier and more serene human being ROBIN SHARMA is a globally respected humanitarian. Widely considered one of the world’s top leadership and personal optimization advisors, his clients include famed billionaires, professional sports superstars and many Fortune 100 companies. The author’s #1 bestsellers, such as The Monk Who Sold His Ferrari, The Greatness Guide and The Leader Who Had No Title are in over 92 languages, making him one of the most broadly read writers alive today. Go to robinsharma.com for more inspiration + valuable resources to upgrade your life “Robin Sharma’s Following Rivals that of the Dalai Lama.” The Times of India “Global Humanitarian.” CNN “Leadership Legend.” Forbes",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9789390166008"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "9390166004"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 165,
+          "printType": "BOOK",
+          "categories": [
+            "Self-Help"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.2.3.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=5n_vDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=5n_vDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.co.in/books?id=5n_vDwAAQBAJ&pg=PP1&dq=robin+sharma&hl=&cd=6&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=5n_vDwAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=5n_vDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "IN",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 206.5,
+            "currencyCode": "INR"
+          },
+          "retailPrice": {
+            "amount": 144.55,
+            "currencyCode": "INR"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=5n_vDwAAQBAJ&rdid=book-5n_vDwAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 206500000,
+                "currencyCode": "INR"
+              },
+              "retailPrice": {
+                "amountInMicros": 144550000,
+                "currencyCode": "INR"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "IN",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/Little_Black_Book_for_Stunning_Success_T-sample-epub.acsm?id=5n_vDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/Little_Black_Book_for_Stunning_Success_T-sample-pdf.acsm?id=5n_vDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=5n_vDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "If you’re truly ready to live your dreams, this book is your fuel."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "TwjZswEACAAJ",
+        "etag": "yRAXC8kaUOQ",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/TwjZswEACAAJ",
+        "volumeInfo": {
+          "title": "THE 5 AM REVOLUTION",
+          "authors": [
+            "Dan Luca"
+          ],
+          "publishedDate": "2017-07",
+          "description": "This book gives the solution to the best life possible: Get up at 5 A.M. and get into the exclusive club of the one percentile in the world. Here's how. First: Get the best sleep possible Learn the fundamentals of a calming and peaceful sleep. Once you solve the sleeping puzzle, you'll be a different person altogether. Second: Have a great morning ritual Practise a world-class morning ritual to kick-start a fantastic day. And by that, it means every single day. Third: Wake up with passion Too many people use sleep as a convenient drug to avoid facing the harsh reality. This book will give you fifty reasons to wake up at 5 A.M. with a smile on your face. Fourth: Implement the right changes in eight weeks In order to massively upgrade your life, more than motivation or discipline, this book will teach you a new structure which will never let you go back to your old ways. Stop feeling so overworked and overwhelmed! Learn the secret to a great life. Buy The 5 A.M. Revolution now to increase your productivity while you gain more balance between your personal and professional life.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "8129147653"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9788129147653"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 192,
+          "printType": "BOOK",
+          "categories": [
+            "Self-Help"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=TwjZswEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=TwjZswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.co.in/books?id=TwjZswEACAAJ&dq=robin+sharma&hl=&cd=7&source=gbs_api",
+          "infoLink": "http://books.google.co.in/books?id=TwjZswEACAAJ&dq=robin+sharma&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/THE_5_AM_REVOLUTION.html?hl=&id=TwjZswEACAAJ"
+        },
+        "saleInfo": {
+          "country": "IN",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IN",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=TwjZswEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "This book gives the solution to the best life possible: Get up at 5 A.M. and get into the exclusive club of the one percentile in the world."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "FOMV0sAmEx0C",
+        "etag": "5V2L6ALuTPw",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/FOMV0sAmEx0C",
+        "volumeInfo": {
+          "title": "MegaLiving: 30 Days To A Perfect Life",
+          "authors": [
+            "Robin Sharma"
+          ],
+          "publisher": "Jaico Publishing House",
+          "publishedDate": "2003-01-01",
+          "description": "We all have the potential for a Perfect Life – to achieve great things and live a life filled with joy, accomplishment and pure bliss. In some of us, this potential is slumbering deep inside, waiting to be tapped and tested. National Bestseller, Megaliving will quickly make things happen in every aspect of your life. With the finest strategies and techniques available to profoundly improve your mind, body and character. This book contains the revolutionary results of over ten years of research with the leading principles of personal mastery and successful living; and reveal to you the 200 master secrets for making your life a magical dream.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9788172246143"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "8172246145"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 243,
+          "printType": "BOOK",
+          "categories": [
+            "Self-Help"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "2.12.10.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=FOMV0sAmEx0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=FOMV0sAmEx0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.co.in/books?id=FOMV0sAmEx0C&printsec=frontcover&dq=robin+sharma&hl=&cd=8&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=FOMV0sAmEx0C&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=FOMV0sAmEx0C"
+        },
+        "saleInfo": {
+          "country": "IN",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 295,
+            "currencyCode": "INR"
+          },
+          "retailPrice": {
+            "amount": 206.5,
+            "currencyCode": "INR"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=FOMV0sAmEx0C&rdid=book-FOMV0sAmEx0C&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 295000000,
+                "currencyCode": "INR"
+              },
+              "retailPrice": {
+                "amountInMicros": 206500000,
+                "currencyCode": "INR"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "IN",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/MegaLiving_30_Days_To_A_Perfect_Life-sample-epub.acsm?id=FOMV0sAmEx0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/MegaLiving_30_Days_To_A_Perfect_Life-sample-pdf.acsm?id=FOMV0sAmEx0C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=FOMV0sAmEx0C&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "This book contains the revolutionary results of over ten years of research with the leading principles of personal mastery and successful living; and reveal to you the 200 master secrets for making your life a magical dream."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "KyDNBgAAQBAJ",
+        "etag": "xoxz61TzPho",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/KyDNBgAAQBAJ",
+        "volumeInfo": {
+          "title": "The Greatness Guide (Tamil)",
+          "subtitle": "One of the World's Most Successful Coaches Shares His Secrets for Personal and Business Mastery",
+          "authors": [
+            "Robin Sharma"
+          ],
+          "publisher": "Jaico Publishing House",
+          "publishedDate": "2015-02-25",
+          "description": "Now In Tamil The Greatness Guide is a strikingly powerful and enormously practical handbook that will inspire you to get to world class in both your personal and professional life. Written by Robin Sharma, one of the planet’s top success coaches and a man whose ideas have been embraced by celebrity CEOs, leading entrepreneurs, rock stars and royalty, as well as by many FORTUNE 500 companies, The Greatness Guide contains a proven formula that will help you meet your highest potential and live an extraordinary life. Discover: — the personal practices of spectacularly successful people — potent ideas to get your organization to greatness — specific strategies to turn setbacks into opportunities — revolutionary tactics for peak performance — how to attract true wealth along with real happiness — breakthrough ideas to generate excellent health and an “energy explosion” — tools for work-life balance and ways to experience a lot more fun",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9788179927304"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "817992730X"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 443,
+          "printType": "BOOK",
+          "categories": [
+            "Self-Help"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.2.2.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=KyDNBgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=KyDNBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.co.in/books?id=KyDNBgAAQBAJ&printsec=frontcover&dq=robin+sharma&hl=&cd=9&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=KyDNBgAAQBAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=KyDNBgAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "IN",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 352.82,
+            "currencyCode": "INR"
+          },
+          "retailPrice": {
+            "amount": 246.97,
+            "currencyCode": "INR"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=KyDNBgAAQBAJ&rdid=book-KyDNBgAAQBAJ&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 352820000,
+                "currencyCode": "INR"
+              },
+              "retailPrice": {
+                "amountInMicros": 246970000,
+                "currencyCode": "INR"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "IN",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/The_Greatness_Guide_Tamil-sample-epub.acsm?id=KyDNBgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/The_Greatness_Guide_Tamil-sample-pdf.acsm?id=KyDNBgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=KyDNBgAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Now In Tamil The Greatness Guide is a strikingly powerful and enormously practical handbook that will inspire you to get to world class in both your personal and professional life."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "4wWm8aacj0IC",
+        "etag": "FnyaWuAriHw",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/4wWm8aacj0IC",
+        "volumeInfo": {
+          "title": "The Greatness Guide, Book 2",
+          "authors": [
+            "Robin Sharma"
+          ],
+          "publisher": "Jaico Publishing House",
+          "publishedDate": "2008-01-01",
+          "description": "101 WAYS TO REACH THE NEXT LEVEL In this highly anticipated sequel to the international bestseller The Greatness Guide, Robin Sharma shares the remarkable insights and tools that have made him one of the world’s most trusted advisers on leadership and personal success. Compelling, engaging and truly unforgettable. Within the pages of The Greatness Guide, Book 2, you will receive uncommon advice that will excite, energize and elevate you, including “Be So Good They Can’t Ignore You,” “Ask to Get,” “Fail Faster,” “Be a Cool Brand” and “Live an Intense Life.” Part manifesto for excellence, part business mastery manual and part inspirational companion, The Greatness Guide, Book 2, distills Robin Sharma’s latest thinking into 101 simple yet powerful lessons that will help you work brilliantly and live beautifully. Getting to world class begins with a single step. Start today.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9788179928141"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "8179928144"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 224,
+          "printType": "BOOK",
+          "categories": [
+            "Self-Help"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.13.11.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=4wWm8aacj0IC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=4wWm8aacj0IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.co.in/books?id=4wWm8aacj0IC&printsec=frontcover&dq=robin+sharma&hl=&cd=10&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=4wWm8aacj0IC&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=4wWm8aacj0IC"
+        },
+        "saleInfo": {
+          "country": "IN",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 352.82,
+            "currencyCode": "INR"
+          },
+          "retailPrice": {
+            "amount": 246.97,
+            "currencyCode": "INR"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=4wWm8aacj0IC&rdid=book-4wWm8aacj0IC&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 352820000,
+                "currencyCode": "INR"
+              },
+              "retailPrice": {
+                "amountInMicros": 246970000,
+                "currencyCode": "INR"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "IN",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/The_Greatness_Guide_Book_2-sample-epub.acsm?id=4wWm8aacj0IC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.co.in/books/download/The_Greatness_Guide_Book_2-sample-pdf.acsm?id=4wWm8aacj0IC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=4wWm8aacj0IC&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Within the pages of The Greatness Guide, Book 2, you will receive uncommon advice that will excite, energize and elevate you, including “Be So Good They Can’t Ignore You,” “Ask to Get,” “Fail Faster,” “Be a Cool Brand” and ..."
+        }
+      }
+    ]
+  }
