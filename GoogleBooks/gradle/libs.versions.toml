@@ -1,5 +1,6 @@
 [versions]
 agp = "8.5.1"
+githubGlide = "4.14.2"
 gsonVersion = "2.11.0"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
@@ -14,6 +15,7 @@ volley = "1.2.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+github-glide = { module = "com.github.bumptech.glide:glide", version.ref = "githubGlide" }
 google-gson = { module = "com.google.code.gson:gson", version.ref = "gsonVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }

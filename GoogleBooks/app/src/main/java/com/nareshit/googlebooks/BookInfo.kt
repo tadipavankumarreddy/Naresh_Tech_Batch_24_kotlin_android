@@ -1,15 +1,22 @@
 package com.nareshit.googlebooks
 
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.Request.Method
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.google.gson.Gson
+import com.nareshit.googlebooks.datasources.*
 
 class BookInfo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +43,17 @@ class BookInfo : AppCompatActivity() {
                 // Write logic for successful response
                 // TODO 2: Parse the JsonResponse
                 // TOOD 2.1: Add Gson Dependency
+                // TODO 2.2: Use GOSn to parse your JSOn
+                val g = Gson()
+                val s:Source =
+                    g.fromJson(response,Source::class.java)
+                val pb = findViewById<ProgressBar>(R.id.progressBar4)
+                pb.visibility = View.INVISIBLE
+                val recyclerView = findViewById<RecyclerView>(R.id.recyclerview)
+                val d:DisplayBooks = DisplayBooks(this,s)
+                recyclerView.adapter = d
+                recyclerView.layoutManager =
+                    LinearLayoutManager(this)
         }, {
             // write logic for unsuccesful response
         })

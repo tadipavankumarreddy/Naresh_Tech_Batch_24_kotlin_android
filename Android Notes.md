@@ -210,3 +210,28 @@ Volley is an HTTP library that makes networking for Android apps easier and most
 [Read more](https://google.github.io/volley/) about volley
 
 
+### Parsing JSON (In an Easyway)
+Step 1: Add Gson Library Dependency
+- GSON is a library that serializes Java Pojo (plain Old Java Objects) or Kotlin Data classes to JSON and also deserializes the JSON data to Java pojos or Kotlin data classes. 
+[GSON Library](https://github.com/google/gson)
+
+Step 2: Copy the response of the URL (Through which you get the JSOn data) and paste it in [json2kt](json2kt.com) and download the equivalent classes (data classes) that represent the json response. 
+
+Step 3: Follow this [tutorial](https://futurestud.io/tutorials/gson-getting-started-with-java-json-serialization-deserialization) and parse the json data using gson library. 
+
+Step 4: Use the data to present it to the user. 
+
+
+To load Images use [Glide](https://github.com/bumptech/glide)
+
+
+### Assignment
+- Practice Google Books app
+- Enhace the view of the app by adding cardview for recyclerview items.
+- Add Details feature to the app. As soon as the user clicks on an item on the recyclerview, display the following details on the next Activity.
+  - Book title
+  - Book Author(s)
+  - Description
+  - Sale Info
+- Using the similar coding, please explore [News API](https://newsdata.io/documentation). Display the current day news based on the category selected by the user. When the article is clicked, take the user to the details screen where further details should be presented. 
+

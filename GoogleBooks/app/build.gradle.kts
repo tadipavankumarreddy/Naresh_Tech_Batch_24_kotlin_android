@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.github.glide)
     implementation(libs.google.gson)
     implementation(libs.volley)
     implementation(libs.androidx.core.ktx)
