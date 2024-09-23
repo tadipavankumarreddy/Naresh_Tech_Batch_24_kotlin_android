@@ -235,3 +235,133 @@ To load Images use [Glide](https://github.com/bumptech/glide)
   - Sale Info
 - Using the similar coding, please explore [News API](https://newsdata.io/documentation). Display the current day news based on the category selected by the user. When the article is clicked, take the user to the details screen where further details should be presented. 
 
+### Retrofit
+
+[Official Link](https://square.github.io/retrofit/)
+
+- This is an open source library that makes the networking task easy.
+
+[Json Placeholder](https://jsonplaceholder.typicode.com/) is a fake rest api that supports `GET`, `POST` and etc. This will help in mastering the network apis. 
+
+***Converter Factories***
+Converters can be added to support other types. Sibling modules adapt popular serialization libraries for your convenience.
+
+- Gson: com.squareup.retrofit2:converter-gson
+- Jackson: com.squareup.retrofit2:converter-jackson
+- Moshi: com.squareup.retrofit2:converter-moshi
+- Protobuf: com.squareup.retrofit2:converter-protobuf
+- Wire: com.squareup.retrofit2:converter-wire
+- Simple XML: com.squareup.retrofit2:converter-simplexml
+- JAXB: com.squareup.retrofit2:converter-jaxb
+- Scalars (primitives, boxed, and String): com.squareup.retrofit2:converter-scalars
+
+
+Use [postman](https://web.postman.co/) to test your APIs.
+
+**Steps to add Retrofit**
+
+1. Add the retrofit dependency 
+
+```
+implementation("com.squareup.retrofit2:retrofit:2.11.0")
+```
+
+2. Also Add the Converter factory dependency
+
+```
+implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+```
+
+3. Add Model classes  
+`FakeGet.kt`
+```kotlin
+data class FakeGet(
+    var userId:Int? = null,
+    var id:Int? = null,
+    var title:String? = null,
+    var body:String? = null
+)
+```
+
+For Post Requests, usually we create two model classes
+
+`PostRequest.kt`
+
+```kotlin
+data class PostRequest(
+    val title:String, val body:String, val id:Int
+)
+```
+
+`PostResponse.kt`
+
+```kotlin
+data class PostResponse(
+    val id:Int, val title:String, val body:String, val userId:Int
+)
+```
+
+4. Create an interface to list out all the type of requests that you want to perform using retrofit library as methods. 
+
+`JsonTypicodeInterface.kt`
+
+I want to do two requests
+   - Get -> https://jsonplaceholder.typicode.com/posts/1
+   - Post -> https://jsonplaceholder.typicode.com/posts
+ - The common URL is "https://jsonplaceholder.typicode.com/", hence we can consider this as `BASE URL`
+
+5. Make calls through retrofit
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+
+    var jsonTypicodeInterface:JsonTypicodeInterface? = null
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_main)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
+        // Initialize retorift object
+        val retrofit:Retrofit = Retrofit.Builder()
+            .baseUrl("https://jsonplaceholder.typicode.com/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+
+        // Initialize the interface
+        jsonTypicodeInterface = retrofit.create(JsonTypicodeInterface::class.java)
+    }
+
+    fun getRequest(view: View) {
+        jsonTypicodeInterface?.getData()?.enqueue(object : Callback<FakeGet>{
+            override fun onResponse(p0: Call<FakeGet>, p1: Response<FakeGet>) {
+                Log.v("MAIN", p1.body().toString())
+            }
+
+            override fun onFailure(p0: Call<FakeGet>, p1: Throwable) {
+
+            }
+        })
+    }
+
+    fun postRequest(view: View) {
+        jsonTypicodeInterface?.postData(PostRequest("Pavan","Trainer",12))?.
+        enqueue(object : Callback<PostResponse> {
+            override fun onResponse(p0: Call<PostResponse>, p1: Response<PostResponse>) {
+                Log.v("MAIN",p1.body().toString())
+            }
+
+            override fun onFailure(p0: Call<PostResponse>, p1: Throwable) {
+
+            }
+        })
+    }
+}
+```
+
+
+
