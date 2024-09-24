@@ -363,5 +363,13 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
+### Notifications
+
+[Official Documentation](https://developer.android.com/develop/ui/views/notifications)
+
+[Slides](https://docs.google.com/presentation/d/1D2n0-V0qG7H0YV5ZWx4rtJpjuHDBJ6m7vcvEmdYR8Ew/edit?resourcekey=0-NjY_l12AwzTN0Znqt7KY6w#slide=id.g116d7d9d49_3_13)
+
+
+
 
 
