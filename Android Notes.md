@@ -369,6 +369,25 @@ class MainActivity : AppCompatActivity() {
 
 [Slides](https://docs.google.com/presentation/d/1D2n0-V0qG7H0YV5ZWx4rtJpjuHDBJ6m7vcvEmdYR8Ew/edit?resourcekey=0-NjY_l12AwzTN0Znqt7KY6w#slide=id.g116d7d9d49_3_13)
 
+A `PendingIntent` is a reference to a token maintained by the system. Application A can pass a PendingIntent to application B in order to allow application B to execute predefined actions on behalf of application A; regardless of whether application A is still alive.
+
+[Official Documentation](https://developer.android.com/privacy-and-security/risks/pending-intent)
+
+Basically the pending intent can be created in three ways
+- getActivity() -> This is used when you want to open the current apps activity from a remote location (can be from another app or the same app's other component)
+- getBroadcast() -> This is used when you want to send the broadcast defined in your application from a remote location. 
+- getService() -> this is used when you want to start a service defined in your application from a remote location.
+
+*All these methods require four arguments to be passed*
+
+- Context
+- Request Code (Any Integer - this uniquely represents the pending intnet)
+- Intent (Actual action to be performed)
+- Pending Intent Flags (Defines what you want to do with an existing pending intent [Official Documentation](https://developer.android.com/reference/android/app/PendingIntent#constants_1))
+
+
+### Assignment 
+Please explore the other styles of notifications and setStyle Method of NotificaitonBuilder. 
 
 
 
