@@ -389,6 +389,11 @@ Basically the pending intent can be created in three ways
 ### Assignment 
 Please explore the other styles of notifications and setStyle Method of NotificaitonBuilder. 
 
+### Broadcast Receivers
+[Official Documentation](https://developer.android.com/develop/background-work/background-tasks/broadcasts)  
+[Slides](https://docs.google.com/presentation/d/1qF9Yeau7uHIP7_aOHWgPU_RnfxACZzGyAZIzcJWz0R0/edit#slide=id.g116d7d9d49_3_13)
 
+#### Assignment:
+Try sending a custom broadcast to another app component.
 
 
