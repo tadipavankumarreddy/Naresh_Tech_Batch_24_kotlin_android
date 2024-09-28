@@ -396,4 +396,14 @@ Please explore the other styles of notifications and setStyle Method of Notifica
 #### Assignment:
 Try sending a custom broadcast to another app component.
 
+### SharedPreferences
+- This is a part of Persistant storage options in android. 
+- SharedPreferences are used to store small amounts of primitive data
+- Usally, data such as highestscores in the game, session keys and etc can be stored/
+- Shared Preferences are internal to the application which means that the external applications or the user himself cannot access this file directly. Also, these files gets deleted when the user uninstalls the application.
+- There is a replacement of sharedpreferences concept with advanced features, DataStore.
+- [Official Documentation Link](https://developer.android.com/training/data-storage/shared-preferences)
+
+
+
 
