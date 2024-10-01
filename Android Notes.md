@@ -404,6 +404,50 @@ Try sending a custom broadcast to another app component.
 - There is a replacement of sharedpreferences concept with advanced features, DataStore.
 - [Official Documentation Link](https://developer.android.com/training/data-storage/shared-preferences)
 
+### SQLite
+- SQLite is an opensource database created for light weight processes
+- You can store small amount of relational data in the local device. 
+- To store relational data in android, SQLite is the only option. 
+- RoomDatabase is also built on SQLite 
+- Please practice the following queries on [SQLiteOnline.com](https://sqliteonline.com/)
 
+**SQLite Queries**  
+- Create a Table
+  - CREATE TABLE person(
+  person_id integer PRIMARY key AUTOINCREMENT,
+  person_name text,
+  person_age integer
+);
 
+- Insert Data 
+  - INSERT INTO person (person_name,person_age) VALUES ('Rama',22), ('Pavan', 32) ;
+
+- Retrieve The Data
+  - select * from person;
+
+- Update the data
+  - UPDATE person set person_age = 34 WHERE person_id = 2;
+
+- Delete an entry
+  - DELETE from person where person_id = 2;
+
+- DROP the table
+  - DROP TABLE person;
+
+- **SQLiteDatabse** is a class in android that creates and helps in managing the data. 
+  
+- To make the SQLite Transactions easy, we have a helper class called `SQLiteOpenHelper`.
+
+- `SQLiteOpenHelper` gives us two methods to override. They are `onCreate(SQliteDatabase db)` & `onUpgrade(SQliteDatabase db, version)`
+  
+- `onCreate(...)` is used to create the tables for your database. This usally runs only once. However, if there is a scheme update of the database as the versions get upgraded, this works at that time as well. 
+  
+- `onUpgrade(...)` is used to restructure the tables when there is a version change.
+
+#### Assignment
+Experiment the same code given for SQLite Databases app. Add the 
+following functionality  
+   1. UPDATE
+   2. DELETE
+   3. DROP
 
