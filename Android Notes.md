@@ -451,3 +451,19 @@ following functionality
    2. DELETE
    3. DROP
 
+### Content Provider in Android
+![Content Provider](/content_provider.png)
+
+[Official Documentation](https://developer.android.com/guide/topics/providers/content-provider-basics)
+
+- Content Provider is a layer built on top of a database in an  application from where you want to share your data to other applications to use. You can visualize Contacts app here. Because contacts app shares its data to other applications such as Whatsapp, instagram, facebook and etc., on your permission. 
+- To access data from other applications or modify or delete it, you need to have contentResolver component in your app. 
+- The Content Provider can be recognized by a unique string called the ContentURI. If you know it only then you can request the data. 
+- All the content URIs should have a prefix as "content://".
+  
+#### Assignment
+- Research about android application sandboxing and prepare a document. 
+- Create an app that reads your contacts and writes them. Refer to the [official documentation link](https://developer.android.com/identity/providers/contacts-provider)
+
+
+
