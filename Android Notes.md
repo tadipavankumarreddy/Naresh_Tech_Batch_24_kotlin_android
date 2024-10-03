@@ -465,5 +465,67 @@ following functionality
 - Research about android application sandboxing and prepare a document. 
 - Create an app that reads your contacts and writes them. Refer to the [official documentation link](https://developer.android.com/identity/providers/contacts-provider)
 
+### Alarm Manager in Android
+- Alarm manager schedules the Tasks in regular time intervals
+- Not an actual Alarm clock
+- Clock of the AlarmManager is of Two Types
+  - Elapsed Real time
+    - Is the time calculated since the system boot
+    - Can also be termed as "Relative Time Clock"
+    - This type of clock is recommended for AlarmManager as it is not the exact time. 
+  - Real Time Clock (RTC)
+    - It is the real clock
+- WakeUp Behavior
+  - WAKE_UP 
+    - When the alarm ticks in if you want to wake up your device, this type of behavior needs to be selected
+  - NOT_WAKE_UP
+    - When the alarm ticks in if you do not want to wake up your device, this type of behavior needs to be selected
+- Based on The Types of clocks and the wake up behavior, there are four alarms that we can use
+  
+Wake Up Behavior| RTC|ELAPSED REAL TIME  
+---|---|---
+Wake Up | RTC_WAKE_UP | ELAPSED_REALTIME_WAKE_UP
+Does not wake Up| RTC | ELAPSED_REALTIME
 
+- Alarm Manager [Official Documentation](https://developer.android.com/reference/android/app/AlarmManager)
+- Alarm manager [Google Training Slides](https://docs.google.com/presentation/d/1Xz5TVqIsKWR2J1-OdZHrSh3mE52AIAWeVhhVNkVdnQE/edit#slide=id.g116d7d9d49_3_13)
 
+#### Assignment
+- Improvise the UI of the HydrationRemainder App
+  - Track the users consumption of water in a day
+- Refer to these outstanding projects on github
+  - [Project One](https://github.com/KeyurDiwan/Water-Reminder)
+  - [Project Two](https://github.com/sinansonmez/WaterTracker)
+
+### JobScheduler
+- This is also a scheduling algorithm just like your alarm manager
+- It is intelligent than alarm manager
+- It works based on Conditions but not on the time.
+  - For certain jobs to be done, you need certain conditions in the device to meet
+    - Internet Connection
+    - Device Idle state is required
+    - Device Should be charging state
+- JobScheduler is only added from API 21. 
+- JobScheduler is not backwards compatible (meaning, you cannot use this before api 21)'
+- Three Major Components involved
+  - JobScheduler
+    - Is responsible to schedule a job
+  - JobService
+    - Is the palce where you define your task
+    - There are two methods to override (These two methods run on Main Thread). They return boolean data type value
+      - onStartJob(...) 
+      - Runs on Main thread
+      - hence when you have a long running task, you need to off load the task to the worker thread and from the worker thread you can notify the JobSchduler about the completion of the task (when the task is complete, you need to call jobFinished(...))
+      - You define your task here. 
+        - true
+          - When the work is offloaded to a worker thread.
+        - false
+          - When the job is done.
+      - onStopJob(...)
+        - You write logic to cancel the task here
+        - true
+          - When the task has to be rescheduled
+        - false
+          - When there is no need of rescheduling the Task
+  - JobInfo
+    - Is used to set the conditions based on which the JobScheduler algorithm decides weather to run the task or not. 
