@@ -529,3 +529,31 @@ Does not wake Up| RTC | ELAPSED_REALTIME
           - When there is no need of rescheduling the Task
   - JobInfo
     - Is used to set the conditions based on which the JobScheduler algorithm decides weather to run the task or not. 
+
+[Learn More here](https://docs.google.com/presentation/d/1jWZ10wsLZTPhTl2jcPpa-PpkIbfJAeoVKfUv-eQoSCk/edit#slide=id.g18e75634d0_0_172)
+
+[Documentation](https://developer.android.com/reference/android/app/job/JobScheduler)
+
+### Work Manager
+- This is an Advanced library than JobScheduler
+- WorkManager is the recommended solution for persistent work.
+- Work is persistent when it remains scheduled through app restarts and system reboots. Becasue, most background processing is complicated and is best accomplished through persistent work
+- WorkManager handles three types of persistent work
+  - Immediate:
+    - Tasks that must begin immediately and complete soon.
+    - One Time running tasks
+    - OneTimeWorkRequest and worker for expedited work, call setExpedited(...) on your oneTimeWorkRequest.
+  - Long Running:
+    - Tasks that might run for longer, potentially longer than 10 minutes
+    - OneTime or Periodic
+    - Any WorkRequest or Worker call setForeground(...) in the worker to handle the notification.
+  - Deferrable:
+    - Scheduled Tasks that start at a later time and can run periodically.
+    - OneTime or Periodic
+    - PeriodicWorkRequest and Worker  
+[Official Documentation](https://developer.android.com/topic/libraries/architecture/workmanager)
+
+#### Assignment 
+Please work with the app in the [codelab](https://developer.android.com/codelabs/basic-android-kotlin-compose-workmanager#0)
+
+
