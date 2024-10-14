@@ -47,3 +47,58 @@ Observer Pattern| Changes in the model are often propagated to the view manually
 
 **Conclusion:**  MVC and MVVM are both effective in managing the complexity of the application. MVC is simpler and more straight forward, but MVVM offers better seperation of concerns and support for data binding making it more modern and flexible choice. 
 
+### ViewBinding in Android 
+- ViewBinding is a library in android that generates binding classes for XML Layouts, providing a type-safe way to access views directly, eliminating the need of `findViewByID(...)`. 
+- It improves code readability and reduces the chances of runtime errors due to invalid view access. 
+
+**Key Features**  
+- **Type Safety**: Provides a direct reference to views in your XML layout, reducing the need for `findViewByID(...)` and avoiding nullability issues.
+- **Compile-Time Efficiency**: Generates binding classes at compile time, so you only access views that exists, reducing the chances of runtime errors.
+- **[Avoiding Boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code)**: Simplifies code by reducing the number of Boilerplate codes and eliminates type casting. 
+- **Lightweight and Faster**: Works faster than the conventional `findViewByID(...)` as it uses generated classes directly.
+
+## ViewModel in Android
+The ViewModel class in Android is a part of Android Architecuture Components. It is designed to store and manage UI related data in lifecycle concious way, which allows data to survive configuration changes, such as screen rotations
+
+**Key Features**
+
+- **Lifecycle-awareness**:ViewModel is tied to the lifecycle of the UI Controller (Activity or Fragment). It is automatically when the UI controller is destroyed permanently. 
+- **Data Persistence**: ViewModel retains UI Data across configuration changes like screen rotations, preventing the need to reload data. 
+- **Seperation of concerns**: Helps to keep the UI Controller (Activity or Fragment) free from business logic, making the code more modular and easier to test. 
+
+**Point to Note:**
+- ViewModel gets created when an object of the class that extends to ViewModel is created. 
+- It gets destroyed when we go through `onCleared(...)` of Viewmodel. 
+- See the lifecycle picture below
+
+![vm](/vm.png)
+
+
+- Learn more about ViewBinding [here](https://developer.android.com/topic/libraries/view-binding)
+- Learn more about ViewModel [here](https://developer.android.com/topic/libraries/architecture/viewmodel)
+
+## LiveData in Android
+
+- LiveData is an Observable data holder class in Android that is part of Android Architecture components. 
+- It is used to hold and manage UI-related data in a lifecycle consious way, meaning it respects the lifecycle of android components like activities and fragments.
+- LiveData updates only the active observers(ie., Observers in `STARTED` or `RESUMED` state), ensuring that your app doesn't crash due to unexpected lifecycle changes
+
+**Key Features of LiveData**
+- **Lifecycle Awaerness**: 
+  - Automatically handles the lifecycle of your app components.
+  - Observers are only notified when they are in an active state, reducing memory overload & leaks. 
+- **UI Updates**: 
+  - Whenever the underlying data changes, UI is automatically updated. 
+- **No Manual Lifecycle handling**: 
+  - You don't need to manually start or stop observing data; Livedata handles that
+- **Data Wrapping**:
+  - LiveData can wrap any type of data, such as an integer, string or a custom type.
+
+**Basic Structure**
+- **LiveData**: This is read-only. It can be observed but not modified. 
+- **MutableLiveData**: This is the mutable form of LiveData that allows data modification and can be observed as well. 
+
+#### Assignment
+- We Observed the changes on count variable which is an integer, Observe other primitive data types and also a custom data type of your own. 
+
+
