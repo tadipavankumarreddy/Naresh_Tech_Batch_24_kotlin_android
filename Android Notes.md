@@ -556,4 +556,63 @@ Does not wake Up| RTC | ELAPSED_REALTIME
 #### Assignment 
 Please work with the app in the [codelab](https://developer.android.com/codelabs/basic-android-kotlin-compose-workmanager#0)
 
+### Fragments in Android
+A Fragment represents a reusable portion of your app's UI. A fragment defines and manages its own layout, has its own lifecycle, and can handle its own input events. Fragments can't live on their own. They must be hosted by an activity or another fragment. The fragment’s view hierarchy becomes part of, or attaches to, the host’s view hierarchy
 
+[Official Link](https://developer.android.com/guide/fragments)
+
+**Primary Usecases**
+- Modular UI Components
+  - Fragments allow developers to break down an activity's user interface into smaller, managable pieces. It makes it easier to reuse the code and UI Components across different parts of the applicaiton or even in different activities. 
+- Flexible layouts for Multiple Screen Sizes
+  - Fragments are ideal for creating responsive layouts. In Devices with larger screens (like tablets), you can show multiple fragments side by side, while on smaller screens (like phones) you can display them one after the other.
+- Reusability
+  - Since fragments are self-contained UI components, they can be reused in different activities or even within different parts of the same activity. This reduces the amount of boilerplate code and can also speed up development. 
+
+**Imp Note**: For a Fragment to be shown to the user, there must be an activity or another fragment running and that should act as a host. A Fragment cannot be used independently. 
+
+![fragment](/fragment-view-lifecycle.png)
+
+### Fragment Lifecycle
+1. onAttach()
+   1. **When it happens**: It is called when the fragment is first attached to its parent activity. 
+   2. **What you can do**: This is where you can access the parent activity or set up any initial resources.
+2. onCreate()
+   1. **When it happens**: It is called when the fragment is first created, right after being attached to the activity. 
+   2. **What you can do**: You can initialize Non UI Components, like setting up data, ViewModels etc.,
+3. onCreateView()
+   1. **When it happens**: called when the frament's UI needs to be created (ie., that the layout is inflated)
+   2. **What you can do**: Inflate the fragment's UI 
+4. onActivityCreated()
+   1. **When it happens**: called after the activity's `onCreate()` method finishes. 
+   2. **What you can do**: This is a good place to interact with the activity's views and complete the final initialization.
+5. onStart()
+   1. **When it happens**:Called when the fragment becomes visible to the user
+   2. **What you can do**: start things that need to happen when the fragment is visible (ex: Starting animations or loading data)
+6. onResume()
+   1. **When it happens**: Called when the frament is now interacting with the user
+   2. **What you can do**:Start things that need to happen when the fragment is actively used. 
+7. onPause()
+   1. **When it happens**:Called when the fragment is no longer in the foreground but still visible
+   2. **What you can do**:Pause any active processes, like animations or network requests to save resources.
+8. onStop()
+   1. **When it happens**:called when the fragment is no longer visible to the user
+   2. **What you can do**: release the resources, stop animations, and save any necessary data
+9.  onDestroyView()
+    1. **When it happens**:Called when the viewhierarchy of the fragment is destroyed (But the fragment itself may still exist)
+    2. **What you can do**:clean up view references, remove any bindings or free resources related to the UI.
+10. onDestroy()
+    1.  **When it Happens**: Called when the fragment is no longer needed
+    2.  **What you can do**: Stop background tasks
+11. onDetach()
+      1. **When it happens**: Called when the fragment is detached from its parent activity
+      2. **What you can do**: Final cleanup.
+
+---
+**Fragment Lifecycle Flow**
+1. Created -> onAttach() -> onCreate() -> onCreateView() -> onActivityCreated() -> onStart() -> onResume()
+2. When the fragment is no longer visible, it follows this flow:
+- onPause() -> onStop() -> onDestroyView() -> onDestroy() -> onDetach()
+
+### Assignment
+- On the tab navigation application, for the red, green and blue fragments -> try to add UI and get it working. 
