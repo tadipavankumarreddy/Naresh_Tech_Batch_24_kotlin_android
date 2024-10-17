@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
     lateinit var viewpager:ViewPager2
@@ -23,9 +25,18 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        val tl = findViewById<TabLayout>(R.id.tablayout)
         viewpager = findViewById(R.id.viewpager)
         val vpa = ViewPagerAdapter(this)
         viewpager.adapter = vpa
+
+        TabLayoutMediator(tl,viewpager){ tab, position ->
+            when(position){
+                0-> tab.setText("Red")
+                1-> tab.setText("Green")
+                2-> tab.setText("Blue")
+            }
+        }.attach()
 
     }
 

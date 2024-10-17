@@ -616,3 +616,4 @@ A Fragment represents a reusable portion of your app's UI. A fragment defines an
 
 ### Assignment
 - On the tab navigation application, for the red, green and blue fragments -> try to add UI and get it working. 
+- SEnd more arguments from first fragment to the second.
