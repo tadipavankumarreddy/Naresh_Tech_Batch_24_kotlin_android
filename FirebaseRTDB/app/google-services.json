@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "648607692211",
+    "project_id": "fir-rtdb-765c9",
+    "storage_bucket": "fir-rtdb-765c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648607692211:android:bbafcbb645e3d86a1607c6",
+        "android_client_info": {
+          "package_name": "com.nareshtech.firebasertdb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDALvDgIdr0UDDBKgTea1F8-ME94GDhEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
