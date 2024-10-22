@@ -656,3 +656,18 @@ Firebase realtime database is one of the core products of firebase, and it allow
 - **Real Time Synchronization:** Data is synchronized across all clients connected to the database in real time. This is ideal for apps that requires instantaneous data updates, such as chat apps or collaborative tools. 
 - **Offine Support:** Firebase RTDB has built in support for offline data access. Data changes are saved locally and synchronized with the server when connnectivity is restored. 
 
+### Room Databases in Android
+- Room is not seperate database. It is based on SQLite only. But this is an abstract layer built on top of SQLite using ORM (Object Relational Mapping). This simplifies the use of databases in your android apps.
+
+[Official Room doc](https://developer.android.com/training/data-storage/room)
+
+**Components in Room Database:**
+- Entity
+  - This is a class in which you will represent the entire database table. 
+  - class name = table name
+  - variable name = column names
+- DAO (database access object)
+  - This is an Interface and by delaring the methods, the SQL queries are auto generated in the background. 
+- RoomDatabase 
+  - This is an entry abstract class where database trasactions can be started. 
+
