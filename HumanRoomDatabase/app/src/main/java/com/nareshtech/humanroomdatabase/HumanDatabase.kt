@@ -1,0 +1,9 @@
+package com.nareshtech.humanroomdatabase
+
+import androidx.room.Database
+import androidx.room.RoomDatabase
+
+@Database(entities = [Human::class], version = 1)
+abstract class HumanDatabase:RoomDatabase(){
+   abstract fun humanDao():HumanDAO
+}

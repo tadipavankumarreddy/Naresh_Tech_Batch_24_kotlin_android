@@ -671,3 +671,16 @@ Firebase realtime database is one of the core products of firebase, and it allow
 - RoomDatabase 
   - This is an entry abstract class where database trasactions can be started. 
 
+Do not forget to add `id("kotlin-kapt")` in the plugins section of `build.gradle (app:Module)`
+
+#### Assignment
+- Try completing the [code lab](https://developer.android.com/codelabs/android-room-with-a-view-kotlin#0)
+- Try adding functionality for delete operation.
+- Try using App Inspector tool for network requests (You can use old projects and see how the get & Post requests are working)
+
+
+## Coming up
+- DataStore
+
+
+
