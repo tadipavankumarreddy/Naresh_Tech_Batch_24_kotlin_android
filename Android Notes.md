@@ -679,8 +679,21 @@ Do not forget to add `id("kotlin-kapt")` in the plugins section of `build.gradle
 - Try using App Inspector tool for network requests (You can use old projects and see how the get & Post requests are working)
 
 
-## Coming up
-- DataStore
+### [DataStore](https://developer.android.com/topic/libraries/architecture/datastore)
+DataStore is part android jetpack components. It is the official replacement of Shared Preferences. 
+- It is a data storage solution in Android
+- Provides a simple, efficient and safe way to store key-value pairs and structured data.
+- Offers two types of Data Stores:
+  - **Preferences Data Store:**
+    - used for storing simple Key-value pairs
+  - **Proto Data Store:**
+    - Used for storing complex data in a structured way using [protocol buffers](https://protobuf.dev/).
+  - **Key Features**
+    - **Asynchronous:** Data store operations are perfromed Asynchornously, making it suitable for modren android development practices.
+    - **Type-Safe:** Data store uses kotlin;s type system to ensure that the data is stored and retrieved in a type-safe manner using protocol buffers. 
+    - **Built on Kotlin Coroutines:** It leverages the kotlin coroutines for asynchronous programming, making it easier to read and maintain data. 
+  
+
 
 
 
