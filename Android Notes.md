@@ -693,7 +693,17 @@ DataStore is part android jetpack components. It is the official replacement of 
     - **Type-Safe:** Data store uses kotlin;s type system to ensure that the data is stored and retrieved in a type-safe manner using protocol buffers. 
     - **Built on Kotlin Coroutines:** It leverages the kotlin coroutines for asynchronous programming, making it easier to read and maintain data. 
   
+#### Assignment
+Please explore Protocol buffers
 
+### Jetpack UI compose
+- A modren ui toolkit to build User Interfaces on android using kotlin.
+- Declarative approach to create ui screens that are less error prone, easy to debug and maintain, reduces boilerplate.
+
+#### Resources 
+- Introduction to JetPackUI compose [slides](https://docs.google.com/presentation/d/1PhChTOt0D7n8cRZ4czL9nhFRjATRQWhHPTN9p-pgq9w/edit?usp=sharing)
+- Jepack UI Compose Course from [developers.android.com](https://developer.android.com/courses/jetpack-compose/course)
+- Try [this](https://developer.android.com/develop/ui/compose/layouts/basics#:~:text=Use%20Column%20to%20place%20items%20vertically%20on%20the%20screen.&text=Similarly%2C%20use%20Row%20to%20place,of%20the%20elements%20they%20contain.&text=Use%20Box%20to%20put%20elements%20on%20top%20of%20another.) tutorial as well 
 
 
 
