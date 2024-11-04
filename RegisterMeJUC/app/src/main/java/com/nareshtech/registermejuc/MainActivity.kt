@@ -1,6 +1,8 @@
 package com.nareshtech.registermejuc
 
 import android.content.Context
+import android.content.Intent
+import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -17,6 +19,7 @@ import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.Button
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
@@ -36,6 +39,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.nareshtech.registermejuc.ui.theme.RegisterMeJUCTheme
+import java.util.ArrayList
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -107,7 +111,18 @@ class MainActivity : ComponentActivity() {
                     Text(text = language, modifier = Modifier.weight(1f))
                 }
             }
-
+            Button(onClick = {
+                val intent = Intent(applicationContext,DetailsActivity::class.java)
+                    .putExtra("name", name)
+                    .putExtra("age",age)
+                    .putExtra("gender",gender)
+                    .putStringArrayListExtra("languages", ArrayList(selectedLanguages))
+                    .addFlags(FLAG_ACTIVITY_NEW_TASK)
+                applicationContext.startActivity(intent)
+            },
+                modifier = Modifier.fillMaxWidth()) {
+                Text(text = "Register")
+            }
         }
     }
 }

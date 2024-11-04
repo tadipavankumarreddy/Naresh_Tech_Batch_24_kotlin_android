@@ -705,5 +705,6 @@ Please explore Protocol buffers
 - Jepack UI Compose Course from [developers.android.com](https://developer.android.com/courses/jetpack-compose/course)
 - Try [this](https://developer.android.com/develop/ui/compose/layouts/basics#:~:text=Use%20Column%20to%20place%20items%20vertically%20on%20the%20screen.&text=Similarly%2C%20use%20Row%20to%20place,of%20the%20elements%20they%20contain.&text=Use%20Box%20to%20put%20elements%20on%20top%20of%20another.) tutorial as well 
 
-
+#### Assignment
+In the `Favorite Movies JUC` app, get the items clicks listened. 
 
