@@ -708,3 +708,221 @@ Please explore Protocol buffers
 #### Assignment
 In the `Favorite Movies JUC` app, get the items clicks listened. 
 
+### Coroutines
+
+Co - Cooperative  
+Routine - Function   
+
+#### What are Coroutines ?
+- If we have multiple long running tasks, you create multiple threads for each of them. When there are multiple threads in the background, the system may run `Out Of Memory`. We can create a single background thread and create multiple coroutines to perform the multiple background operations. By Using memory that is required for running one single thread, we can handle multiple background tasks.
+
+- Light-weight threads
+- Like threads, coroutines can run in parllel, wait for each other and communicate with each other
+- coroutines != thread
+- Coroutines are cheap (in terms of memory)
+- you can create thousands of coroutines without any memory issues. 
+
+#### Simple Program 
+```kotlin
+import kotlin.concurrent.thread
+
+fun main() {
+    println("Current thread : ${Thread.currentThread().name}")
+
+    thread{
+        // Now you have created a thread
+        // Let's fake some work here
+        Thread.sleep(1000)
+        println("This runs in ${Thread.currentThread().name}")
+    }
+}
+```
+
+Note: Threads run in parallel.
+
+#### Coroutine Example
+```kotlin
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlin.concurrent.thread
+
+fun main() {
+    println("Current thread : ${Thread.currentThread().name}")
+
+    // launch is one of the corotuines builder
+   GlobalScope.launch {
+       println("Current thread : ${Thread.currentThread().name}")
+       Thread.sleep(1000)
+       println("Current thread : ${Thread.currentThread().name}")
+   }
+
+    GlobalScope.launch {
+        println("Current thread : ${Thread.currentThread().name}")
+        Thread.sleep(1000)
+        println("Current thread : ${Thread.currentThread().name}")
+    }
+
+    Thread.sleep(3000)
+}
+```
+
+#### delay() vs Thread.sleep()
+- Thread.sleep(1000) -> blocks the thread for 1 second. Now, the thread gets lazy.
+- delay(1000) -> Only suspened the corotuine for 1 second.
+  - this is not going to block the thread at all.
+  - While your current coroutine is suspened, the other corotuines can still run on the same thread. 
+
+```kotlin
+package com.nareshtech.coroutines
+
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlin.concurrent.thread
+
+fun main() {
+    println("Current thread : ${Thread.currentThread().name}")
+
+    // launch is one of the corotuines builder
+   GlobalScope.launch {
+       println("Current thread : ${Thread.currentThread().name}")
+       delay(1000) // This is just suspending the coroutine for 1 sec.
+       // Its not blocking the thread
+       println("Current thread : ${Thread.currentThread().name}")
+   }
+
+    GlobalScope.launch {
+        println("Current thread : ${Thread.currentThread().name}")
+        delay(1000)
+        println("Current thread : ${Thread.currentThread().name}")
+    }
+
+    Thread.sleep(3000)
+}
+```
+
+#### Suspend Modifier
+- A function with `suspend` modifier is known as suspending function. 
+- Suspending function can only be called from a corotuine context or from another suspending function. 
+- They cannot be called from outside the corotuine context. 
+- `delay(...)` is a suspending function. 
+
+If you want to block the thread on which the corotuine is running, you can use a coroutine builder called `runBlocking`
+
+```kotlin
+runBlocking{
+  delay(3000)
+}
+```
+
+```kotlin
+package com.nareshtech.coroutines
+
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+
+fun main() {
+    runBlocking {
+        println("Coroutine runs on ${Thread.currentThread().name}")
+        GlobalScope.launch {
+            println("Coroutine runs on ${Thread.currentThread().name}")
+            delay(1000)
+        }
+
+        delayForSometime(2000)
+        println("Coroutine runs on ${Thread.currentThread().name}")
+    }
+}
+
+suspend fun delayForSometime(i:Long){
+    delay(i)
+}
+```
+
+#### Coroutine builders
+
+Functions that are used to create corotuines are called coroutine builders
+
+##### Most important functions to create a coroutines.
+1. launch 
+   - GlobalScope.launch{}
+     - Creates a coroutine at global (app) level which can survive the entire lifecycle of an app. 
+   - launch{}
+     - Creates a coroutine in local scope. Meaning, the corotuine created throguh this scope gets destroyed with in the activity. 
+   - This corotuine never blocks the thread in which it is running. 
+   - Launch corotuine is also called as `Fire and Forget`
+   - Launchs a new coroutine without blocking the current thread.
+     - Inherits the thread & Corotuine scope of the immediate parent coroutine.
+   - launch returns a reference to `Job` object.
+   - Using this `Job` Object, you can cancel or wait for the coroutine to finish. 
+2. async
+   - GlobalScope.async{}
+     - Creates a Coroutine in global scope (app level)
+   - async{}
+     - Creates a coroutine in local scope
+   - You can return a value after the execution of code from async coroutine where it is not possible to return a value from a launch coroutine. 
+   - Never blocks the thread. 
+   - Async returns a DefferedJob Object in which we get to have data, we can also cancel the corotuine or wait for it to return data and finish. 
+3. runBlocking
+
+[Official docs](https://developer.android.com/kotlin/coroutines)
+
+In Android, Coroutine Dispatchers are essential in managing which threads coroutines run on. 
+Dispatchers control the context where a coroutine will execute, allowing you to specify whether it should run on main thread, a background thread, or a custom thread pool. 
+
+1. Dispatchers.Main
+   - **Purpose**: Runs on Main (UI) Thread
+   - **Usecase**: Any work that needs to interact with the UI, such as updating Views or handling user interactions, should run on this Dispatcher
+   - 
+   ```kotlin
+   GlobalScope.launch(Dispatchers.Main){
+    // Update the UI or respond to user interaction
+   }
+   ```
+2. Dispatchers.Io
+   - **Purpose**: Optimized for I/O tasks like reading from or writing to a database or file, and for network requests.
+   - **Usecase**: Suitable for operations that involve data handling but should not block the main thread.
+   - 
+   ```kotlin
+   GlobalScope.launch(Dispatchers.IO){
+    // Perfrom some network request
+    val data = fetchDataFromNetwork()
+    withContext(Dispatchers.Main){
+      // Update the UI
+    }
+   }
+   ```
+3. Dispatchers.Default
+   - **Purpose**: Optimized for CPU-Intensitve work, like complex caluclations, sorting, and processing large data sets. 
+   - **Usecase**: Use this when you have tasks that require significant processing power but don't need immediate UI updates
+   - 
+   ```kotlin
+   GlobalScope.launch(Dispatchers.Default){
+    val result = performHeavyCalculation() // cpu-intensive task
+    withContext(Dispatchers.Main){
+      // Update UI
+    }
+   }
+   ```
+4. Dispatchers.Unconfined
+   - **Purpose**: Stars the coroutine in the caller's thread and only switches context if it suspends. After the suspension, it resumes in the thread where it started. 
+   - **Usecase**: This is rarely used in android. It is useful for tasks that don't require a specific thread or dispatcher, but its generally recommended to stick with other dispatchers for predictable behavior. 
+
+### Services in Android
+*A Service is an application component that can perform long-running operations in the background. It does not provide a user interface. Once started, a service might continue running for some time, even after the user switches to another application. Additionally, a component can bind to a service to interact with it and even perform interprocess communication (IPC). For example, a service can handle network transactions, play music, perform file I/O, or interact with a content provider, all from the background.*
+
+***Caution: A service runs in the main thread of its hosting process; the service does not create its own thread and does not run in a separate process unless you specify otherwise. You should run any blocking operations on a separate thread within the service to avoid Application Not Responding (ANR) errors.***
+
+#### Three Types of Services
+1. **Foreground Service**
+   - A kind of service that notifies the user about its running through a notification. 
+   - When you use a foreground service, you must display a notification so that the users are actively aware that the service is running. This notification cannot be dismissed unless the service is either stopped or removed from the foreground. 
+2. **Background Service**
+   - A background service performs an operation that is not directly noticed to the user. For Example, if an app used a service to compact its storage, that would usually be a background service. 
+3. **Bound Service**
+   - A service is bound when an application component binds to it by calling `bindService()`. A Bound service offers client server interface that allows components to interact with the service, send requests and even do so across the processes leading to Interprocess communication (IPC).
+
+[Official Documentation](https://developer.android.com/develop/background-work/services)
+
