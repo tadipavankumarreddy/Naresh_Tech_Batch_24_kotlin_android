@@ -926,3 +926,31 @@ Dispatchers control the context where a coroutine will execute, allowing you to 
 
 [Official Documentation](https://developer.android.com/develop/background-work/services)
 
+#### Important Methods in Services
+
+***onStartCommand(...)***
+- The System invokes this method by calling `startService()` when another component (such as an Activity) requests that the service be started.
+- When this method executes, the service is started and can run in the background indefinitely. 
+- If you implement this, It is your responsibility to stop the service when its work is complete by calling `stopSelf(..)` [with in the service class] or `stopService(...)`.
+- If you only want to provide binding [for bound services], you don't need to implement this method. 
+
+***onBind(...)***
+- The system invokes this method by calling `bindService(...)` when another app component want to bind with the service (to perform RPC). 
+- In your implementation of this method, you must provide an interface that clients use to communicate with the service by returning an IBinder.
+- You must always implement this method; However, if you don't want to allow binding you should return null. 
+
+***onCreate(...)***
+- The system invokes this method to perfrom one-time setup procedures when the service is initially created (before it calls either the onStartCommand(...) or onBind(...))
+- If the service is already running, this method is not called. 
+
+***onDestroy(...)***
+- The system invokes this method when the service is no longer used and is being destroyed. 
+- Your service should implement this method to clean up any resources such as threads, registered listeners, or Receivers. 
+- This is the last call that the service receives.
+
+[Media player Android](https://developer.android.com/media/platform/mediaplayer)
+[Media 3 Exo Player android](https://developer.android.com/media/media3/exoplayer)
+
+[Learn about the constants returned from onStartCommand(...)](https://developer.android.com/reference/android/app/Service#START_STICKY)
+
+
