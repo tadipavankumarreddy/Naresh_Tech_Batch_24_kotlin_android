@@ -954,3 +954,63 @@ Dispatchers control the context where a coroutine will execute, allowing you to 
 [Learn about the constants returned from onStartCommand(...)](https://developer.android.com/reference/android/app/Service#START_STICKY)
 
 
+#### Testing in Android
+When you implemented your first feature in android app, you ran your application on a physical device and also sometimes on emulator to verify the code works & works as expected. This means you already tested an application, albeit a manual test.
+
+**Types of Tests**
+- **Functional Testing**: Does my app do what it's supposed to do ?
+- **Performance Testing**: Does it do it quickly and efficiently?
+- **Accessibility Testing**: Does it work well with Accessibility services ?
+  
+**scope**  
+Tests also vary depending on the size, or degree of isolation
+- **Unit tests**: these can also be called as **Small tests**. These tests will only verify a small portion of your application such as a method or a class. 
+- **End to End Tests**: We may test the entire screen or user flow. 
+- **Integration Tests:** these are medium tests where it happens between two or more unit tests.
+
+**We shall look into two tests in Android using kotlin**  
+- **Unit Testing**: Tests the logic without involving the android framework.
+- **UI Testing with Espresso**: Ensures the UI behaves as expected, testing user Interactions like entering text and pressing buttons. 
+
+[Documentation](https://developer.android.com/training/testing/fundamentals)  
+[Explore Mockito](https://site.mockito.org/)  
+[Try to use Google's Roboelectric](https://site.mockito.org/)  
+
+
+**Build Flavours**
+
+you can make the same available in multiple flavors such as (free & Paid). 
+you need not to create two different projects and everything can be done under one single project using build flavors. 
+
+**To create the build flavors:**
+
+```groovy
+ flavorDimensions += "version"
+    productFlavors {
+        create("demo") {
+            // Assigns this product flavor to the "version" flavor dimension.
+            // If you are using only one dimension, this property is optional,
+            // and the plugin automatically assigns all the module's flavors to
+            // that dimension.
+            dimension = "version"
+            applicationIdSuffix = ".demo"
+            versionNameSuffix = "-demo"
+        }
+        create("full") {
+            dimension = "version"
+            applicationIdSuffix = ".full"
+            versionNameSuffix = "-full"
+        }
+    }
+  ```
+
+  The above code adds two flavors namely, demo & full. 
+  Full version can have additional features and they can be built under the same project. 
+
+  
+
+
+
+
+
+
