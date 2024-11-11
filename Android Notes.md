@@ -1012,5 +1012,49 @@ you need not to create two different projects and everything can be done under o
 
 
 
+### Types of Location Access in Android
+In Android, You can control location access in different ways, allowing users to choose how and when the app can access their location:
 
+1. **Allow Only while using the app**
+   - Also know as "While-In-Use" or "foreground-only" access
+   - Added in android 10.
+   - Allows location access only when the app is actively used. 
+2. **Allow One-time**
+   - Grants location access for single session. When the user closes the app, access is revoked. 
+3. **Allow All the Time**
+   - Provides the background access to the user;s location at any time.
+   - **Note:** Your app must comply with [Google's Location Policies](https://support.google.com/googleplay/android-developer/answer/9799150?hl=en) for background location access.
+4. **Deny**
+   - The user can deny location access, preventing the app from accessing the location data. 
 
+---
+
+### Location Providers in Android
+
+Primarily android uses two location providers
+
+1. **NETWORK_PROVIDER**
+   - Retrives location based on cell-towers, Wi-Fi, and other network signals.
+   - Require `ACCESS_COARSE_LOCATION` permission. 
+2. **GPS_PROVIDER**
+   - Provides location data based on satellite signals for high accuracy.
+   - Require `ACCESS_FINE_LOCATION` permission. 
+
+your app can access supported location services using classes in `com.google.android.gms.location` package. 
+
+---
+
+### Key classes for Location in Android
+1. **FusedLocationProviderClient**
+   - The central component of the Location Framework.
+   - Use this class to request location updates and retrive the last known location. 
+2. **LocationRequest**
+   - A data object containing parameters like update intervals, priority, and accuracy.
+   - Pass this object to `FusedLocationProviderClient` to specify the conditions for location updates. 
+3. **LocationCallback**
+   - Used to retrieve notifications when the device's location changes or becomes unavailable. 
+   - Pass this as callback to `LocationResult` to capture and handle location data.
+
+---
+### The End
+---
